@@ -12,6 +12,7 @@ import Teachers from "./pages/Teachers";
 import Classes from "./pages/Classes";
 import Subjects from "./pages/Subjects";
 import AdminUsers from "./pages/AdminUsers";
+import Schedules from "./pages/Schedules";
 import Placeholder from "./components/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -38,7 +39,7 @@ const App = () => (
             <Route path="/classes" element={<Protected><Classes /></Protected>} />
             <Route path="/subjects" element={<Protected><Subjects /></Protected>} />
             <Route path="/admin/users" element={<Protected><AdminUsers /></Protected>} />
-            <Route path="/schedules" element={<Protected><Placeholder title="Jadwal Pelajaran" /></Protected>} />
+            <Route path="/schedules" element={<Protected><Schedules /></Protected>} />
             <Route path="/attendance/students" element={<Protected><Placeholder title="Absen Siswa" /></Protected>} />
             <Route path="/attendance/teachers" element={<Protected><Placeholder title="Absen Guru" /></Protected>} />
             <Route path="/calendar" element={<Protected><Placeholder title="Kalender Pendidikan" /></Protected>} />
